@@ -100,3 +100,8 @@ body {
     background-color: var(--bg-primary);
     color: #fff !important;
 }
+
+
+#mc-footer-link:hover {
+    color: var(--bg-primary) !important;
+}
