@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* VARIABLES */
+:root {
+    /* Fonts */
+    --ft-poppins: 'Poppins', sans-serif;
+    --ft-roboto: 'Roboto', sans-serif;
+    --ft-firacode: 'Fira Code', '600', monospace;
+    /* My colors */
+    --bg-primary: #3b71ca;
+    --bg-primary-light: #7595c9;
+    --bg-secondary: #9fa6b2;
+    --bg-seccess: #14a44d;
+    --bg-danger: #dc4c64;
+    --bg-warning: #e4a11b;
+    --bg-info: #54b4d3;
+    --bg-light: #fbfbfb;
+    --bg-dark: #332d2d;
+    --bg-white: #ffffff;
+    --bg-black: #000000;
+    --bg-purple: #aa00ff;
+    --bg-orange: #ff6d00;
+}
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.bg-purple {
+    background-color: var(--bg-purple);
+}
+
+.bg-orange {
+    background-color: var(--bg-orange);
+}
+
+/* GENERAL STYLES */
+html {
+    scroll-behavior: smooth;
+    line-height: 1.15;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: var(--ft-poppins);
+    font-weight: 400;
+    font-size: 1rem;
+    background: var(--bg-white);
+    color: #6c757d;
+    line-height: 1.7;
+    /* text-align: left; */
+}
+
+/* NAVBAR */
+#navbar {
+    top: -100px; /* Hide the navbar 100 px outside of the top view */
+    transition: top 0.4s; /* Transition effect when sliding down (and up) */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--bg-primary) !important;
+    font-weight: 400;
+}
+
+/* HEADER */
+.nav-item .active {
+    color: var(--bg-primary) !important;
+    font-weight: 800;
+}
+
+/* SOBRE MI */
+
+/* SERVICIOS */
+.service-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+}
+
+/* PORTFOLIO */
+.btn-value:hover {
+    background-color: var(--bg-primary);
+    color: var(--bg-light);
+}
+
+.btn-value.active {
+    background-color: var(--bg-primary);
+    color: #fff !important;
+}

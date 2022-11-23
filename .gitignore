@@ -1,0 +1,2 @@
+# Ignorar archivos scss ubicados en assets/src/scss
+# assets/src/**/*.scss
