@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () =>
     window.onscroll = function () { scrollFunction() };
     filterSelection("todos");
     activeNavigation();
+    navbarCollapse();
 
 });
 
@@ -90,5 +91,15 @@ function activeNavigation()
             e.target.classList.add('active');
         })
 
+    });
+}
+
+// NAVBAR COLLAPSE ON ITEM CLICK
+function navbarCollapse()
+{
+    let navbarSupportedContent = document.querySelector('#navbarSupportedContent');
+
+    navbarSupportedContent.addEventListener('click', () => {
+        navbarSupportedContent.classList.remove('show');
     });
 }
