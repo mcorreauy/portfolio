@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Reloj | Marcelo Correa</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="../../assets/img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" /> -->
+  <!-- MDB -->
+  <link rel="stylesheet" href="../../assets/css/mdb.min.css" />
+  <link rel="stylesheet" href="../../assets/css/lightbox.min.css" />
+  <link rel="stylesheet" href="./reloj.css" />
+</head>
+
+<body id="reloj-body" class="" onload="initClock()">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top shadow-sm py-3 py-lg-0 px-lg-5">
+    <a href="../../index.html" class="navbar-brand">
+      <h1 class="m-0 display-6 me-auto">
+        <span class="text-primary fw-bold">M</span><span class="text-white">Correa</span>
+      </h1>
+    </a>
+  </nav>
+
+  <div class="container">
+    <!-- RELOJ 1 -->
+    <div class="row d-flex justify-content-center align-items-center" style="height: 100vh;">
+      <div class="col-12 col-md-8 col-lg-8">
+        <div class="datetime">
+          <div class="date">
+            <span id="dayname">Day</span>,
+            <span id="daynum">00 de</span>
+            <span id="month">Month</span>
+            <span id="year">de Year</span>
+          </div>
+          <div class="time">
+            <span id="hour">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+            <span id="period">AM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- RELOJ 1 -->
+  </div>
+
+  <div class="container-fluid">
+    <div class="row" style="margin-top: -30px;">
+      <div class="col-12 d-flex justify-content-end align-items-center">
+        <a href="../../index.html" class="text-white p-0 m-0 mc-link">© 2022: Marcelo Correa</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="../../assets/js/mdb.min.js"></script>
+  <script type="text/javascript" src="./reloj.js"></script>
+
+</body>
+
+</html>
